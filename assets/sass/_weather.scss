@@ -31,5 +31,82 @@
         font-size: 18px;
         border: 0;
         border-radius: 10px;
+        margin: 0 0 30px 0;
     }
+    &__mainInfo{
+        display: flex;
+        border-radius: 20px;
+        padding: 30px;
+        background-color: #fff;
+        gap: 30px;
+        align-items: center;
+        color: #000;
+
+    }
+    &__temp{
+        display: flex;
+        .degree{
+            font-size: 40px;
+            font-weight: 700;
+        }
+        .unit{
+            font-size: 20px
+        }
+    }
+    &__data{
+        p{
+            font-size: 14px;
+            margin: 0 0 5px 0;
+            &:last-of-type{
+                margin: 0;
+            }
+        }
+      
+    }
+
+
+
+
+    &__next{
+        color: $weatherHeaderColor;
+        margin: 30px 0;
+        @include fluid-type(300px, 1200px, 20px, 40px);
+        text-align: center;
+
+    
+    }
+    &__days{
+        display: flex;
+        border-radius: 20px;
+        padding: 30px; 
+        background-color: #fff;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        color: $weatherHeaderColor;
+
+    }
+
+    &__day{
+        color:#000;
+        text-align: center;
+
+    }
+    &__loader{
+        display: none;
+    }
+
+    &__error{
+        padding: 10px;
+        background-color: rgba(217, 14, 14, 0.8);
+        color: #fff;
+        font-weight: 700;
+    }
+   
+    &__map{
+        height: 350px;
+    }
+
+        
+    
 }
